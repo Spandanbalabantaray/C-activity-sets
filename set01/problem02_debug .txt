@@ -1,0 +1,38 @@
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+(gdb) r
+Starting program:  
+No executable specified, use `target exec'.
+(gdb) l
+No symbol table is loaded.  Use the "file" command.
+(gdb) file l
+l: No such file or directory.
+(gdb) file problem02
+Reading symbols from C:\Users\DELL\OneDrive\Desktop\C-activity-sets\set01\problem02.exe...done.
+(gdb) l
+1       //2. Write a C program to add two numbers.
+2       #include <stdio.h>
+3
+4       int main() {
+5           int num1, num2, sum;
+6
+7           printf("Enter the first number: ");
+8           scanf("%d", &num1);
+9
+10          printf("Enter the second number: ");
+(gdb) r
+Starting program: C:\Users\DELL\OneDrive\Desktop\C-activity-sets\set01/problem02.exe 
+[New Thread 7344.0x1720]
+[New Thread 7344.0x21ec]
+Enter the first number: 1
+Enter the second number: 2
+Sum: 3
+[Inferior 1 (process 7344) exited normally]
+(gdb) exit
