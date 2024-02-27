@@ -1,0 +1,32 @@
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+(gdb) l
+No symbol table is loaded.  Use the "file" command.
+(gdb) file problem07
+Reading symbols from C:\Users\DELL\OneDrive\Desktop\C-activity-sets\set01\problem07.exe...done.
+(gdb) l
+16      }
+17
+18      void output(int n, int sum) {
+19          printf("The sum of all natural numbers until %d is %d.\n", n, sum);
+20      }
+21
+22      int main() {
+23          int n, sum;
+24
+25          n = input_n();
+(gdb) r
+Starting program: C:\Users\DELL\OneDrive\Desktop\C-activity-sets\set01/problem07.exe 
+[New Thread 16212.0x19d4]
+[New Thread 16212.0x860]
+enter the natural number1
+The sum of all natural numbers until 1 is 1.
+[Inferior 1 (process 16212) exited normally]
+(gdb) quit
