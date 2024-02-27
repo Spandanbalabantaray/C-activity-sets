@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 GNU gdb (GDB) 7.6.1
 Copyright (C) 2013 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -30,4 +31,38 @@ Enter a number: 1
 Enter a number: 2
 Sum of 1 and 2 is 3
 [Inferior 1 (process 11040) exited normally]
+=======
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+(gdb) l
+No symbol table is loaded.  Use the "file" command.
+(gdb) file problem03 
+Reading symbols from C:\Users\DELL\OneDrive\Desktop\C-activity-sets\set01\problem03.exe...done.
+(gdb) l
+1       #include <stdio.h>
+2
+3       int input();
+4       int add(int a, int b);
+5       void output(int a, int b, int sum);
+6
+7       int main() {
+8           int num1, num2, result;
+9
+10          num1 = input();
+(gdb) r
+Starting program: C:\Users\DELL\OneDrive\Desktop\C-activity-sets\set01/problem03.exe 
+[New Thread 11040.0x454]
+[New Thread 11040.0xd68]
+Enter a number: 1
+Enter a number: 2
+Sum of 1 and 2 is 3
+[Inferior 1 (process 11040) exited normally]
+>>>>>>> a7864df0e59822701a71b141be395b40df7f40c8
 (gdb) quit
