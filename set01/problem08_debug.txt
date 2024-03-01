@@ -1,0 +1,37 @@
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.  
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+(gdb) l
+No symbol table is loaded.  Use the "file" command.
+(gdb) file problem08
+Reading symbols from C:\Users\DELL\OneDrive\Desktop\C-activity-sets\set01\problem08.exe...done.
+(gdb) l
+24
+25      void output(int n, int a[], int sum) {
+26          printf("Entered numbers: ");
+27          for (int i = 0; i < n; i++) {
+28              printf("%d ", a[i]);
+29          }
+30          printf("\nSum of entered numbers: %d\n", sum);
+31      }
+32
+33      int main() {
+(gdb) r
+Starting program: C:\Users\DELL\OneDrive\Desktop\C-activity-sets\set01/problem08.exe 
+[New Thread 10376.0x1f84]
+[New Thread 10376.0x32d4]
+Enter the number of elements: 3
+Enter 3 numbers:
+1 
+7
+11
+Entered numbers: 1 7 11 
+Sum of entered numbers: 19
+[Inferior 1 (process 10376) exited normally]
+(gdb) quit
