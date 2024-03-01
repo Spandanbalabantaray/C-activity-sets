@@ -1,0 +1,32 @@
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+(gdb) l
+No symbol table is loaded.  Use the "file" command.
+(gdb) file problem09
+Reading symbols from C:\Users\DELL\OneDrive\Desktop\C-activity-sets\set01\problem09.exe...done.
+(gdb) l
+22          return x;
+23      }
+24
+25      void output(float n, float sqrroot) {
+26          printf("Square root of %.2f is %.5f\n", n, sqrroot);
+27      }
+28
+29      int main() {
+30          float num, sqrroot;
+31          num = input();
+(gdb) r
+Starting program: C:\Users\DELL\OneDrive\Desktop\C-activity-sets\set01/problem09.exe 
+[New Thread 11316.0x2c54]
+[New Thread 11316.0xcf8]
+Enter a number: 49
+Square root of 49.00 is 7.00000
+[Inferior 1 (process 11316) exited normally]
+(gdb) quit
