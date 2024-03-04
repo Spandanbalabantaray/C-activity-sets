@@ -1,0 +1,43 @@
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+(gdb) l
+No symbol table is loaded.  Use the "file" command.
+(gdb) file problem12
+Reading symbols from C:\Users\DELL\OneDrive\Desktop\C-activity-sets\set01\problem12.exe...done.
+(gdb) l
+7       typedef struct _complex Complex;
+8
+9       int get_n();
+10      Complex input_complex();
+11      void input_n_complex(int n, Complex c[n]);
+12      Complex add(Complex a, Complex b);
+13      Complex add_n_complex(int n, Complex c[n]);
+14      void output(int n, Complex c[n], Complex result);
+15
+16      int main() {
+(gdb) r
+Starting program: C:\Users\DELL\OneDrive\Desktop\C-activity-sets\set01/problem12.exe 
+[New Thread 908.0x2208]
+[New Thread 908.0x34c8]
+Enter the number of complex numbers: 3
+Enter 3 complex numbers:
+Complex number 1:
+Real part: 2 3
+Imaginary part: Complex number 2:
+Real part: 4 5
+Imaginary part: Complex number 3:
+Real part: 6 7
+Imaginary part: Sum of the 3 complex numbers:
+2.00 + 3.00i
+4.00 + 5.00i
+6.00 + 7.00i
+is: 12.00 + 15.00i
+[Inferior 1 (process 908) exited normally]
+(gdb) quit
